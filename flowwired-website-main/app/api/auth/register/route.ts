@@ -4,6 +4,9 @@ import bcrypt from "bcryptjs";
 import { prisma } from "@/lib/prisma";
 import { AUTH_COOKIE, authCookieOptions, signAuthToken } from "@/lib/auth";
 
+import { validateRegisterInput } from "@/lib/securityValidation";
+
+
 export async function POST(request: Request) {
     try {
         const body = (await request.json()) as {
@@ -11,6 +14,15 @@ export async function POST(request: Request) {
             password?: string;
             name?: string;
         };
+
+        const validationError = validateRegisterInput(body);
+        if (validationError) {
+            return NextResponse.json(
+                { error: validationError },
+                { status: 400 }
+    );
+}
+
 
         const email = (body.email ?? "").trim().toLowerCase();
         const password = body.password ?? "";
