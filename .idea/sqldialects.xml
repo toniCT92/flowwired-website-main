@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$USER_HOME$/Desktop/flowwired-website-main/flowwired-website-main/prisma/migrations/20260103172036_init/migration.sql" dialect="GenericSQL" />
+    <file url="file://$USER_HOME$/Desktop/flowwired-website-main/flowwired-website-main/prisma/migrations/20260106145712_add_feedback/migration.sql" dialect="GenericSQL" />
+    <file url="file://$USER_HOME$/Desktop/flowwired-website-main/flowwired-website-main/prisma/migrations/20260106151111_add_custom_request/migration.sql" dialect="GenericSQL" />
+    <file url="file://$USER_HOME$/Desktop/flowwired-website-main/flowwired-website-main/prisma/migrations/20260106174053_add_custom_requests/migration.sql" dialect="GenericSQL" />
+    <file url="file://$USER_HOME$/Desktop/flowwired-website-main/flowwired-website-main/prisma/migrations/20260106174934_add_contact_messages/migration.sql" dialect="GenericSQL" />
+    <file url="file://$USER_HOME$/Desktop/flowwired-website-main/flowwired-website-main/prisma/migrations/20260106181656_add_template_purchases/migration.sql" dialect="GenericSQL" />
+  </component>
+</project>
